@@ -1,12 +1,14 @@
-const promise = new Promise((resolve, reject) => {
+import Lrhmise from "./src";
+
+const lrhmise = new Lrhmise((resolve, reject) => {
   setTimeout(() => {
-    resolve('成功');
-  },1000);
+    resolve("成功");
+  }, 5000);
 }).then(
   (data) => {
-    console.log('success', data)
+    console.log("success", data);
   },
   (err) => {
-    console.log('faild', err)
+    console.log("faild", err);
   }
-)
+);
